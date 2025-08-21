@@ -1,2 +1,36 @@
 1. What IP address did the original suspicious traffic come from?
 Đáp án dễ thấy: 10.4.17.101
+2. The attacker downloaded a suspicious file. What is the HTTP method used to retrieve the properties of this file?
+Lọc theo các gói tin http.
+Đáp án: PROPFIND
+3. It appears that this file is malware. What is its filename?
+Cũng là gói tin http và thấy file malware avp.msi
+4. What is the SSDEEP hash of the malware as reported by VirusTotal?
+Để lấy được SSDEEP của avp.msi trước tiên:
+Trên wireshark -> File -> Export Object -> Chọn HTTP theo file avp.msi.
+Dùng file vừa export mang vào virustotal để lấy SSDEEP
+5.According to the NeikiAnalytics community comment on VirusTotal, to which family does the malware belong?
+ssload
+6.What is the creation time of the malware?
+2009-12-11 11:47:44
+7.What is the domain name that the malware is trying to connect with?
+api.ipify.org
+8.What is the IP address that the attacker has consistently used for communication?
+85.239.53.219
+9.Which file, included in the original package, is extracted and utilized by the malware during execution?
+forcedelctl.dll
+10.What program is used to execute the malware?
+Cái này để lấy được cũng trên Virustotal -> Behavior và tìm thoi :)))
+Đáp án:msiexec.exe
+11. What is the hostname of the compromised machine?
+Các gói tin liên quan http sẽ hữu ích
+DESKTOP-FWQ3U4C
+12. What is the key that was used in the attack?
+Nếu thấy đáp án câu 11 sẽ có đáp án câu này
+WkZPxBoH6CA3Ok4iI
+13.What is the os_version of the compromised machine?
+Windows 6.3.9600
+14.What is the owner name of the compromised machine?
+Nevada
+15.After decrypting the communication from the malware, what command is revealed to be sent to the C2 server?
+Tự mò đi - OSINT
