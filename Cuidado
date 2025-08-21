@@ -1,0 +1,30 @@
+1.What is the victim's IP address?
+tự mò
+2.What is the IP address of the attacker from whom the files were downloaded?
+tự mò
+3.Which malicious file appears to be the first one downloaded?
+Dùng Export Object + time
+DA: sh
+4.What is the name of the function that the attacker used to download the payload?
+Follow gói có sh -> đọc và tìm hàm
+DA: dlr
+5.Which port does the attacker's server use?
+Tường tự câu 4
+DA:80
+6. The script checks which directories it can write to by attempting to create test files. What is the size of the second test file? (Size in MB)
+Câu này đi mò ở HTTP stream đọc là thấy
+DA:2
+7. What is the full command that the script uses to identify the CPU architecture?
+DA:uname -mp
+8. What is the name of the file that is downloaded after the CPU architecture is compared with reference values?
+DA: x86_64
+9.What is the full command that the attacker used to disable any existing mining service?
+Để lấy được đáp án câu này thì follow gói tin liên quan clean
+DA: systemctl disable c3pool_miner
+10. Apparently, the attacker used a packer to compress the malware. Which version of this packer was used? (Format X.XX)
+Câu này hơi đau đầu xíu;
+Ban đầu tìm Export Object và tìm trong đó file có tên x86_64 và thấy nó thuộc packer có tên octet-stream
+Sau khi có file mang lên Virustotal và lấy version thôi
+DA: 4.XX (hihi)
+11.
+
