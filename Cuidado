@@ -10,21 +10,33 @@ Follow gói có sh -> đọc và tìm hàm
 DA: dlr
 5.Which port does the attacker's server use?
 Tường tự câu 4
-DA:80
+DA:8*
 6. The script checks which directories it can write to by attempting to create test files. What is the size of the second test file? (Size in MB)
 Câu này đi mò ở HTTP stream đọc là thấy
 DA:2
 7. What is the full command that the script uses to identify the CPU architecture?
-DA:uname -mp
+DA:uname -m*
 8. What is the name of the file that is downloaded after the CPU architecture is compared with reference values?
 DA: x86_64
 9.What is the full command that the attacker used to disable any existing mining service?
 Để lấy được đáp án câu này thì follow gói tin liên quan clean
-DA: systemctl disable c3pool_miner
+DA: systemctl disable c3pool_min**
 10. Apparently, the attacker used a packer to compress the malware. Which version of this packer was used? (Format X.XX)
 Câu này hơi đau đầu xíu;
 Ban đầu tìm Export Object và tìm trong đó file có tên x86_64 và thấy nó thuộc packer có tên octet-stream
 Sau khi có file mang lên Virustotal và lấy version thôi
 DA: 4.XX (hihi)
-11.
+11. What is the entropy value of unpacked malware?
+Cac buoc de lay ket qua:
+  B1: Như các kết quả bên trên ta có được file đã bi packed (x86_64)
+  B2: Từ VT đã cho file trên dùng công cụ pack gì theo version vừa tìm (**x)
+  B3: Sử dụng công cụ trên unpack ra file "x86_64_unpacked"
+  B4: Dùng ent hoặc binwalk lấy entropy thôi
+DA: 6.48**49
+12. What is the file name with which the unpacked malware was submitted on VirusTotal?
+Sử dùng file đã unpacked lên VT và tìm
+DA: red****.cuidado
+13. What MITRE ATT&CK technique ID is associated with the main purpose of the malware?
+Hint: dựa trên VT tìm impact
+DA: T1***
 
