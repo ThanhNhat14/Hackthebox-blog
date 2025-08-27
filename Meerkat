@@ -1,4 +1,17 @@
 1. We believe our Business Management Platform server has been compromised. Please can you confirm the name of the application running?
 Thực hiện tìm trong file pcap thấy bonita + BMP --> research ra kết quả
 DA: Bonita****
-2.
+2. We believe the attacker may have used a subset of the brute forcing attack category - what is the name of the attack carried out?
+Tìm các categrory liên quan
+DA: ******tial ****fing
+3. Does the vulnerability exploited have a CVE assigned - and if so, which one?
+DA: CVE-20**-****7
+4. Which string was appended to the API URL path to bypass the authorization filter by the attacker's exploit?
+Hmmmmmmmmmmm
+DA: **********tion
+5.How many combinations of usernames and passwords were used in the credential stuffing attack?
+Có 5*+1 sự kết hợp và có 1 cái kết hợp thành công nên là 5*
+DA:5*
+6.Which username and password combination was successful?
+Sử dụng (http.response.code != 401) để tìm các status code liên quan 204 và dùng (http.request.method == "POST") đối chiếu thời gian và tìm usernam và password
+DA:***.*****@forela.co.uk:*****nm3nt
