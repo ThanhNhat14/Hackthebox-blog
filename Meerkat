@@ -19,3 +19,7 @@ DA:***.*****@forela.co.uk:*****nm3nt
 DA: p*****.*o
 8. Please provide the filename of the public key used by the attacker to gain persistence on our host.
 DA:hffgra4unv
+9. Can you confirm the file modified by the attacker to gain persistence?
+DA:/home/ubuntu/.ssh/authorized_keys
+10. Can you confirm the MITRE technique ID of this type of persistence mechanism?
+DA:T10**.00*
